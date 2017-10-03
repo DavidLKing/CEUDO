@@ -1,13 +1,15 @@
 # Overview
 This is the implementation as described in King and White's 2016 INLG short on enhancing SDC output ("Enhancing PTB Universal Dependencies for Surface Realization"). Essentially, these files provide a platform to integrate both Stanford Dependency Converter (SDC) output with CCGbank to get a representation closer to Universal Dependencies as described in Nivre et al. 2016 and in the manual at universaldependencies.org. Once everything is set up, and there is a lot of setup, this entire system takes about 20 minutes, resources permitting. Please send any questions to the repo owner (currently David L. King) via the github contact information provided.
 
+Sidenote: I'm still cleaning this and testing this on new builds.
+
 # Prerequisites
 
 #### SHORT VERSION:
-4. Run David Vadas' scripts
-1. move PTB to ./PTB-DEPS/data
+1. Run David Vadas' scripts
+2. move PTB to ./PTB-DEPS/data
 3. move CCGbank AUTO and PARG files to the same directories
-2. convert the PTB using the SDC (and combine if necessary)
+4. convert the PTB using the SDC (and combine if necessary)
 5. Train classifiers and place in ./PTB-DEPS/classifiers
 6. Build morpha
 7. Ready!
